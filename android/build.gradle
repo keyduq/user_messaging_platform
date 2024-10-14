@@ -2,7 +2,7 @@ group 'com.terwesten.gabriel.user_messaging_platform'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.9.25'
+    ext.kotlin_version = '1.8.20'
     repositories {
         google()
         mavenCentral()
@@ -37,17 +37,8 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
-
 }
 
-compileOptions {
-    sourceCompatibility JavaVersion.VERSION_17
-    targetCompatibility JavaVersion.VERSION_17
-}
-
-kotlinOptions {
-    jvmTarget = '17'
-}
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
